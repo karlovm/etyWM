@@ -2,7 +2,10 @@
 
 # Compile the window manager
 echo "Compiling window manager..."
-gcc -o etyWM etyWM.c -lX11 -lXext -lXrender -lm
+gcc -Wall -O2 etyWM.c -o etyWM $(pkg-config --cflags --libs xcb-shape xcb cairo) -lm
+
+
+
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed!"
@@ -14,37 +17,40 @@ echo "Cleaning up old processes..."
 pkill Xephyr
 pkill etyWM
 
-# Start fresh X server
+# Start fresh X server with Xephyr
 echo "Starting Xephyr..."
-Xephyr :2 -ac -screen 1024x768 -reset -terminate 2>/dev/null &
+# Enable error logging
+set -x
 
-# Wait for Xephyr to start
-echo "Waiting for Xephyr to initialize..."
+# Start Xephyr with error output
+Xephyr :2 -ac -screen 1279x720  -br -reset -terminate 2>&1 | tee xephyr.log &
+XEPHYR_PID=$!
+
+# Wait for Xephyr to start and verify it's running
 sleep 2
+if ! ps -p $XEPHYR_PID > /dev/null; then
+    echo "Xephyr failed to start!"
+    exit 1
+fi
 
-# Start the window manager
-echo "Starting window manager..."
-DISPLAY=:2 ./etyWM &
+echo "Xephyr started with PID $XEPHYR_PID"
 
-# Wait for WM to initialize
-echo "Waiting for window manager to initialize..."
+# Start the window manager with error output
+DISPLAY=:2 ./etyWM 2>&1 | tee wm.log &
+WM_PID=$!
+
+# Wait and verify window manager is running
+sleep 2
+if ! ps -p $WM_PID > /dev/null; then
+    echo "Window manager failed to start!"
+    kill $XEPHYR_PID
+    exit 1
+fi
+
+echo "Window manager started with PID $WM_PID"
+
+# Try to start a terminal
 sleep 1
+DISPLAY=:2 xterm 2>&1 | tee xterm.log &
 
-# Launch initial application
-echo "Launching xclock..."
-DISPLAY=:2 xclock &
-
-sleep 1
-
-# Launch initial application
-echo "Launching xclock2..."
-DISPLAY=:2 xclock &
-
-
-echo "Setup complete! Your window manager is running."
-echo "Use Alt + Left Mouse Button to move windows"
-echo "Use Alt + F4 to close windows"
-echo "Press Ctrl+C to exit"
-
-# Wait for user interrupt
-wait
+echo "Test environment is running"

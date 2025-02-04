@@ -1,0 +1,2 @@
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":2"
+[ 04.02.2025 21:19:30.421 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
