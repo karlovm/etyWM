@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "xcb_ewmh.h": "c"
+        "xcb_ewmh.h": "c",
+        "string.h": "c",
+        "shape.h": "c"
     }
 }

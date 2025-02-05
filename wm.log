@@ -1,2 +1,93 @@
+etyWM Log: Connected to X server
+etyWM Log: Substructure events selected on root window
+etyWM Log: Launched xterm (pid 67880)
+etyWM Log: Background pixmap set successfully
+etyWM Log: MAP_REQUEST for window 0x40000c
+Info: Created frame window 0x200002 for client 0x40000c
+Info: Title bar created for frame 0x200002
+Info: Added client (frame 0x200002)
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: MAP_REQUEST for window 0x60000c
+Info: Created frame window 0x200006 for client 0x60000c
+Info: Title bar created for frame 0x200006
+Info: Added client (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Double-click detected on title bar; toggling fullscreen (frame 0x200006)
+Info: Saved geometry for client (frame 0x200006)
+Info: Client (frame 0x200006) set to fullscreen
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Double-click detected on title bar; toggling fullscreen (frame 0x200006)
+Info: Client (frame 0x200006) restored to normal state
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Double-click detected on title bar; toggling fullscreen (frame 0x200006)
+Info: Saved geometry for client (frame 0x200006)
+Info: Client (frame 0x200006) set to fullscreen
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Double-click detected on title bar; toggling fullscreen (frame 0x200006)
+Info: Client (frame 0x200006) restored to normal state
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200006)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200006)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Single-click detected on title bar; starting drag (frame 0x200002)
+etyWM Log: Pointer grabbed for dragging window (frame 0x200002)
+etyWM Log: Dragging ended and pointer ungrabbed
+etyWM Log: Exiting window manager
 xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":2"
-[ 04.02.2025 21:19:30.421 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
